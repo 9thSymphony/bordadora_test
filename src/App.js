@@ -1,24 +1,26 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Home from './components/Home'; 
+import Home from './components/Home';
 import About from './components/About';
+import LoginForm from './components/Login';
 
-export function App() {
+function App() {
   return (
     <>
-    <Navbar>
-    <BrowserRouter>
-        <Routes>  
-          <Route index elemet = {<Home/>}/>
-          <Route path = "/Home" element = {<Home/>} />
-          <Route path = "About" element = {<About/>} />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/login" element={<LoginForm />} />
         </Routes>
       </BrowserRouter>
-    </Navbar>
     </>
   );
 }
 
 export default App;
+

@@ -7,12 +7,12 @@ function CollapsibleExample() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Bordadora test Web App</Navbar.Brand>
+        <Navbar.Brand href="Home">Bordadora test Web App</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#login">Login</Nav.Link>
+            <Nav.Link href="About">About</Nav.Link>
+            <Nav.Link href="Login">Login</Nav.Link>
             <NavDropdown title="More" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#report">Report</NavDropdown.Item>
               <NavDropdown.Item href="#contact us">Contact Us</NavDropdown.Item>
